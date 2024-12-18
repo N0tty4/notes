@@ -1,2 +1,1 @@
-# notes
-it is my notes of cs degree in Tor Vergata
+hi, it is all my notes for cs degree in italy on Tor Vergata university :)
