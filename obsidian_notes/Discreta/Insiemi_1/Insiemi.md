@@ -92,4 +92,55 @@ Il prodotto cartesiano è: $A \times B := \{(a, b) : a \in A, b \in B\}$.
 - $(1, 2) \not= (2,1)$ l'ordine conta
 - $A \times (B \cap C) = (A \times B) \cap (A \times C)$ 
 # 1.3 funzioni
-Siano A, B insiemi, Una funzione $f(x)$ da A in B è una legge che associa $f : A \to B, \quad \forall a \in A, \, \exists! \, b \in B \quad \text{tale che} \quad f(a) = b$ 
+Siano A, B insiemi, Una funzione o applicazione o mappa$f(x)$ da A in B è una legge che associa $f : A \to B, \quad \forall a \in A, \, \exists! \, b \in B \quad \text{tale che} \quad f(a) = b$ è un sotto insieme di $A \times B : (a,b) \in f$.
+## tipi di funzione:
+sai $f:A \to B$
+- iniettiva se $a_1 \not= a_2, f(a_1) \not= f(a_2), \forall a_1, a_2 \in A$   
+- suriettiva se $\forall b \in B \exists a \in A: f(a) = b$ 
+- biunivoca: se una funzione è suriettiva e iniettiva
+## composizione
+siano $A, B, C$ insiemi, e $f: A \to B \wedge g: B \to C$, la composizione è la funzione $g \text{o} f: A \to C$
+$(g \text{o} f)(a) := g(f(a)) \forall a \in A$ 
+###  funzione uguaglianza:
+Due funzioni si dicono uguali se: siano $f,g: A \to B, \text{f e g sono uguali (scritto f=g) se} f(a) = g(a) \forall a \in A$
+### definizione
+1. $f$ e $g$ iniettive, allora $f$o$g$  è iniettiva  
+2. $f$ e $g$ suriettiva, allora $f$o$g$  è suriettiva
+3. $f$ e $g$ biunivoca, allora $f$o$g$  è biunivoca 
+### funzione identità
+sia A un insieme, la funzione Identità su A è la funzione $Id_A : A \to A$ ogni elemento è associato a se stesso. $Id_A(a) := a, \forall a \in A$  
+### funzione inversa
+siano A e B insiemi, e $f : A \to B$ . la funzione inversa di $f$ è $f^{-1} : B \to A$. Definito da $f^{-1}(b) :=  a$: la definizione formale è:  $f^{-1} := \{(a, b) \in B \times A: (a, b) \in f\}$ sono insiemi di coppie che sono sottoinsieme del prodotto cartesiano. $Id_a$ è biunivoco, quindi $Id_A^{-1} = Id_A$ 
+### definizione
+siano $f, g, h$ : $A \to A$ allora:
+1. $f \circ (g \circ h) = (f \circ g) \circ h$ 
+2. $f \circ Id_A = f = Id_A \circ f$
+3. se f è biunivoca $f \circ f^{-1} = Id_A = f^{-1} \circ f$ 
+## Esempi e Controesempi
+- esempio: non dimostra
+- controesempio: dimostra che non è sempre vero
+### definizione
+sia $f : A \to B$ e sia $S \subseteq A$ l'immagine di $S$ tramite $f$ è $f(S) :=\{f(a): a \in S\}$, quindi $f(S) \subseteq B$
+### definizione
+sia $a \in \mathbb{P}$, il gruppo simmetrico di rango m è: $S_n := \{f: [m] \to [m]: f \text{ biunivoca}\}$. le funzioni che vanno da $f_n$ ad $n$ sono biunivoche.
+Gli elementi di $S_n$ si dicono permutazioni se $f \in S_n$ scriveremo $f = \{a_1, a_2, ..., a_n\}$ sequenza di $n$ numeri dove $a_1 := f(1), a_2 := f(2)$. 
+#### esempio
+$S_3 = \{123, 132, 213, 213, 312, 321}
+## osservazione
+siano $f, g \in S_n, f = \{a_1, \dots, a_n\}, g =\{b_1, \dots, b_n\}$, allora $f \circ g = ab_1, ab_2, \dots, n$
+### esempio
+$n = 7, f = \{2, 6, 1, 7, 4, 3, 5\}, g = \{6, 1, 7, 2, 4, 5, 3\}$ 
+$f \circ g = \{3, 2, 5, 6, 7, 4, 1\}$
+$g \circ f = \{1, 5, 6, 3, 2, 7, 4\}$
+### altro esempio
+$n_5, f = \{3, 1, 4, 2, 5\}, g = \{5, 1, 3, 4, 2\}$
+$f \circ g = \{5, 3, 4, 2, 1\}$ 
+## osservazione
+$f \in S_n, f = a_1, \dots a_n$, allora $f^{-1} = {b_1, \dots, b_n}$ dove b è la posizione d i $i$ in $n$ 
+$\{a_1, \dots, a_n\} (\forall i = \{1, \dots, n\})$ 
+### esempio
+ $n = 7, f = \{2_1, 6_2, 1_3, 7_4, 4_5, 3_6, 5_7\} = f^{-1} = \{3, 1, 6, 5, 7, 2, 4\}$
+ questo perché bisogna prendere gli indici dei numeri cambiarli con i numeri, quindi $2_1 \to 1_2$, e posizionare 1 in posizione 2, 3 in posizione 1 ecc..
+ questo perché $f \circ f^{-1} = Id_A = f^{-1} \circ f$ 
+
+  
