@@ -121,7 +121,7 @@ siano $f, g, h$ : $A \to A$ allora:
 - controesempio: dimostra che non è sempre vero
 ### definizione
 sia $f : A \to B$ e sia $S \subseteq A$ l'immagine di $S$ tramite $f$ è $f(S) :=\{f(a): a \in S\}$, quindi $f(S) \subseteq B$
-### definizione
+## gruppo simmetrico
 sia $a \in \mathbb{P}$, il gruppo simmetrico di rango m è: $S_n := \{f: [m] \to [m]: f \text{ biunivoca}\}$. le funzioni che vanno da $f_n$ ad $n$ sono biunivoche.
 Gli elementi di $S_n$ si dicono permutazioni se $f \in S_n$ scriveremo $f = \{a_1, a_2, ..., a_n\}$ sequenza di $n$ numeri dove $a_1 := f(1), a_2 := f(2)$. 
 #### esempio
@@ -129,9 +129,11 @@ $S_3 = \{123, 132, 213, 213, 312, 321}
 ## osservazione
 siano $f, g \in S_n, f = \{a_1, \dots, a_n\}, g =\{b_1, \dots, b_n\}$, allora $f \circ g = ab_1, ab_2, \dots, n$
 ### esempio
-$n = 7, f = \{2, 6, 1, 7, 4, 3, 5\}, g = \{6, 1, 7, 2, 4, 5, 3\}$ 
+$n = 7, f = \{2_1, 6_2, 1_3, 7_4, 4_5, 3_6, 5_7\}, g = \{6_1, 1_2, 7_3, 2_4, 4_5, 5_6, 3_7\}$  
 $f \circ g = \{3, 2, 5, 6, 7, 4, 1\}$
+qui quello che accade è che prendi l'indice e dici: "mettiamo al primo post l'elemento numero 2, poi mettiamo al secondo posta l'elemento numero 6", quindi l'indice indica il posto in cui va, il numero indica l'indice dell'altro insieme in cui va il numero.
 $g \circ f = \{1, 5, 6, 3, 2, 7, 4\}$
+
 ### altro esempio
 $n_5, f = \{3, 1, 4, 2, 5\}, g = \{5, 1, 3, 4, 2\}$
 $f \circ g = \{5, 3, 4, 2, 1\}$ 
@@ -140,7 +142,41 @@ $f \in S_n, f = a_1, \dots a_n$, allora $f^{-1} = {b_1, \dots, b_n}$ dove b è l
 $\{a_1, \dots, a_n\} (\forall i = \{1, \dots, n\})$ 
 ### esempio
  $n = 7, f = \{2_1, 6_2, 1_3, 7_4, 4_5, 3_6, 5_7\} = f^{-1} = \{3, 1, 6, 5, 7, 2, 4\}$
- questo perché bisogna prendere gli indici dei numeri cambiarli con i numeri, quindi $2_1 \to 1_2$, e posizionare 1 in posizione 2, 3 in posizione 1 ecc..
- questo perché $f \circ f^{-1} = Id_A = f^{-1} \circ f$ 
+ questo perché bisogna prendere gli indici dei numeri cambiarli con i numeri, quindi $2_1 \to 1_2$, e posizionare 1 in posizione 2, 3 in posizione 1 ecc... Questo è perché $f \circ f^{-1} = Id_A = f^{-1} \circ f$ :
+ $f \circ f^{-1}=\{1, 2, 3, 4, 5, 6, 7\}$
+# 1.4 relazioni
+Siano A e B insiemi, una relazione binaria è un sottoinsieme, $A \times B : R \subseteq A \times B$. Per definizione $A \times B= \{(a, b): a \in A \land b \in B\}$. Con $a \not R b$ si indica che $(a, b)  \not \in R$.
+### esempio
+$A = \{1, 2, 3\}$  $b = \{0, 1, 2, 3, 4\}$. $A \times B= \{(1, 0),(1, 1), (1, 2),(1, 3),(1, 4),(2,0),(2,1),(2, 2), (2, 3), (2, 4),(3, 0),(3, 1),(3, 2), (3, 3), (3, 4)\}$
+## relazione su un insieme
+una relazione su un insieme A è una relazione $A R A$, 
+### esempio
+$R = \{(a, b)\}: \text{a è divisibile da b}\}$, $A = \{1, 2, 3, 4, 5, 6\}$
+$R = \{(1,1),(1,2),(1,3),(1,4)(1,5),(1,6),(2,2),(2,4),(2,6),(3,3),(3,6),(4,4),(5,5),(6,6\}$
+### osservazione
+Noi sappiamo che una relazione $ARA \subseteq A \times A$, se A contiene n elementi, allora $A \times A$ contiene $n^2$ elementi. Per trovare tutti i possibili sottoinsiemi di $A \times A$, quindi l'insieme potenza di  $P(A \times A)$, quindi $2^{n^{2}}$, che sarebbe la sua cardinalità.
+Quindi il numero di relazioni di $A \times A$ è $2^{n^{2}}$.  
+## Tipi di relazioni
+1. riflessiva
+   una relazione R su un insieme A è chiamata riflessiva se $\forall a \in A, (a, a) \in R$
+   ### esempio
+   $A = \{1, 2, 3, 4\}$, 
+   $R_1 = \{(1,1), (1, 2),(2,2),(2,3),(3,3),(3,4)\}$, è riflessiva perché contiene tutti i (n,n) 
+   $R_2$ = $\{(1,1),(1,2),(2,1),(3,1),(4,4)\}$ non è riflessiva perché non contiene (3,3).
+2. irriflessiva
+   una relazione R su un insieme A è chiamata irriflessiva se $\forall a \in A, (a, a) \not \in R$ 
+   ### esempio
+   $A = \{1, 2, 3, 4\}$, 
+   $R_2$ = $\{(1,2),(2,1),(3,1),\}$, non contiene $(1,1)$ o $(2,2)$ 
+3. simmetrica
+   una relazione R si definisce simmetrica su un insieme A se $\forall a, b \in A, (a,b) \in R\implies (b,a) \in R$
+   ### esempio
+   R =$\{(1,1),(2,1),(1,2),(2,2)\}$ è simmetrica
+4. relazione transitiva
+   una relazione R su un insieme A si chiama transitiva se $\forall a, b, c \in A, (a, b) \in R \land (b,c) \in R \implies (a, c) \in R$ 
+   ### esempio
+   
+   
+
 
   

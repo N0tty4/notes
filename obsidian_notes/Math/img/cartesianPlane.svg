@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="662" height="205" style="
+        width:662px;
+        height:205px;
+        background: transparent;
+        fill: none;
+">
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area"><g class="shapes-region" style="stroke: black; fill: none;"><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M240,110.5 L398.25,110.99" style="stroke: rgb(0, 0, 0); stroke-width: 1px; fill: none; fill-opacity: 1;"/><g stroke="#000" transform="matrix(-0.9999950652018582,-0.0031415874858796893,0.0031415874858796893,-0.9999950652018582,400.25,110.99999999999999)" style="stroke: rgb(0, 0, 0); stroke-width: 1px;"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M320,156.5 L320.25,54" style="stroke: rgb(0, 0, 0); stroke-width: 1px; fill: none; fill-opacity: 1;"/><g stroke="#000" transform="matrix(-0.002443458521344478,0.9999970147507714,-0.9999970147507714,-0.002443458521344478,320.25,52)" style="stroke: rgb(0, 0, 0); stroke-width: 1px;"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g/></g><g/><g/><g/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="660" height="203" style="width:660px;height:203px;font-family:Asana-Math, Asana;background:transparent;"></svg>
+</svg>
