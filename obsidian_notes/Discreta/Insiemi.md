@@ -175,8 +175,3 @@ Quindi il numero di relazioni di $A \times A$ è $2^{n^{2}}$.
 4. relazione transitiva
    una relazione R su un insieme A si chiama transitiva se $\forall a, b, c \in A, (a, b) \in R \land (b,c) \in R \implies (a, c) \in R$ 
    ### esempio
-   
-   
-
-
-  

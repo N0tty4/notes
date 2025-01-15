@@ -4,5 +4,7 @@
   "accentColor": "#ff8080",
   "enabledCssSnippets": [
     "adaptive_images"
-  ]
+  ],
+  "textFontFamily": "CaskaydiaCove Nerd Font",
+  "interfaceFontFamily": "CaskaydiaCove Nerd Font"
 }

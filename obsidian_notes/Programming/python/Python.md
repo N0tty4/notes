@@ -8,9 +8,10 @@ print("hello i am petru")
 ```
 ## sintassi
 ```python
-print("value", sep = '', end = "\n", file=file, flush=flush)
+print("*value", sep = '', end = "\n", file=file, flush=flush)
 ```
-- `value` e il valore che noi vogliamo andare a stampare
+- `*value` e il valore che noi vogliamo andare a stampare,
+  sta ad indicare che la prima sequenza di argomenti è variabile, e `values` raccogli gli argomenti.
 - `sep` stringa che andrà a separare i vari valori
 - `end` indica cosa vogliamo che sia alla fine della riga che abbiamo stampato
 - `file` indica dove bisogna stampare il messaggio, di default e sys.stdout 
@@ -62,3 +63,6 @@ x = ["1", "2", "3"]
 print("x".join(x))
 # outpus is 1*2*3
 ```
+
+# lezione 6
+contare le parole

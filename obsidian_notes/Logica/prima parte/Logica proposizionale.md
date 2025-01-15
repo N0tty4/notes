@@ -48,6 +48,14 @@ non tutti i connettivi sono essenziali, molti sono usati per rappresentare delle
 - $p \implies q$ si può esprimere come $\neg p \lor q$ 
 - $p \leftrightarrow q$ come $(p \implies q) \land (q \implies p)$ e come $(p \land q) \lor (\neg p \land \neg q)$ 
 quindi tutto si può riportare a $\neg$ e $\lor$
+### esercizi:
+1. scrivere $p \land q$ in termini di $\neg$ e $\to$:
+   $\neg(p \to \neg q)$ 
+2. scrivere $\equiv$ in termini di $\land$ e $\to$:
+   $(p \to q) \land (q \to p)$
+3. scrivere $\lor$ con $\to$:
+   
+
 ### nor e nand
  il nor è la negazione dell' or e il nand è la negazione dell' and:
 $$
