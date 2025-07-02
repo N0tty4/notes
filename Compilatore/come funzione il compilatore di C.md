@@ -1,0 +1,12 @@
+segue 4 passaggi:
+- preprocessing
+	- legge il codice sorgente e applica tre procedimenti:
+		- rimuove tutti i commenti
+		- il preprocessore includerà ogni header file
+		- tutte le macro verranno cambiate con i loro valori
+- compiling
+	- il compilatore prende il codice e lo trasforma in codice assembly
+- assembler
+	- assembla il codice in codice oggetto, che sarebbe codice macchina puro.
+- linking
+	- il compilatore prende il codice oggetto e le librerie passate e le collega per creare un singolo eseguibile.
