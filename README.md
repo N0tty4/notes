@@ -1,1 +1,1 @@
-hi, it is all my notes for cs degree in italy on Tor Vergata university :)
+this repo is for all my university notes, im studing computer syence in Sapienza
